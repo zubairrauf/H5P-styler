@@ -14,14 +14,14 @@
  * Plugin Name:       H5P Styler
  * Plugin URI:        https://zubairrauf.com/
  * Description:       Alter the dsign of H5P by adding your own CSS.
- * Version:           0.0.1
+ * Version:           1.0.1
  * Author:            Zubair
  * Author URI:        https://zubairrauf.com
  * Text Domain:       h5pstyler
  * License:           MIT
  * License URI:       http://opensource.org/licenses/MIT
  * Domain Path:       /languages
- * GitHub Plugin URI: https://github.com/h5p/h5pmods-wordpress-plugin
+ * GitHub Plugin URI: https://github.com/zubairrauf/H5P-styler
  */
 
 // If this file is called directly, abort.
@@ -43,9 +43,9 @@ if (!defined('WPINC')) {
  */
 function h5pmods_alter_styles(&$styles, $libraries, $embed_type) {
   $styles[] = (object) array(
-    // Path can be relative to wp-content/uploads/h5p or absolute.
-    'path' => 'http://localhost/cna/wp-content/plugins/h5pstyler/custome-h5p.css',
-    'version' => '?ver=1.3.7' // Cache buster
+    // Get the path of the current theme's style.css files.
+    'path' => get_stylesheet_directory_uri().'/style.css',
+    'version' => '?ver=1.4.0' // Cache buster
   );
 }
 add_action('h5p_alter_library_styles', 'h5pmods_alter_styles', 10, 3);

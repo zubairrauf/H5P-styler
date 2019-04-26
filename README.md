@@ -1,15 +1,7 @@
-H5P Mods
+H5P Styler
 ==========
 
-This WordPress plugin is provided as an example of how you can use the actions
-provided by the H5P plugin. The actions are used for altering or adding
-H5P content or library resources.
-
-Feel free to fork this project or simply use it as a template for doing your
-own custom modifications to H5P.
-
-You should be aware that the hooks you add on your site will not follow
-the content if it's exported.
+This WordPress plugin let's you change the style of H5P by adding your own CSS. In this initial version, the path to css file is an absolute path. Please change it to your own css file.
 
 ## License
 

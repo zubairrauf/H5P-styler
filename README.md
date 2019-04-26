@@ -1,7 +1,7 @@
 H5P Styler
 ==========
 
-This WordPress plugin let's you change the style of H5P by adding your own CSS. In this initial version, the path to css file is an absolute path. Please change it to your own css file.
+This WordPress plugin let's you change the style of H5P by adding your own CSS. The plugin now gets the location of your current theme. Please add the styling for H5P in your theme's style.css. Using a child theme is strongly recommended.
 
 ## License
 
